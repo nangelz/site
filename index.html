@@ -9,6 +9,8 @@
     <head>
         
         <h1>Jose Angel  Castrillo Zamora </h1>
+
+        <img src="" alt="">
         
         <nav>
             <li><a href="index.html">Home</a></li>
@@ -33,22 +35,69 @@
             
         </ul>
 
+        <h2>Formulario</h2>
+        <form action="get" id="formularioDeContacto" name="formularioDeContacto">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="edad">Idade:</label>
+            <input type="number" id="edad" name="edad"><br><br>
+
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto"><br><br>
+
+            <label for="turnoDisponiveis">Para qual materia você está interesado?</label>
+            <select id="turnoDisponiveis" name="turnoDisponiveis">
+                <option value="matematicas">Matemáticas</option>
+                <option value="ciencias">Ciencias</option>
+                <option value="historia">Historia</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Portugues">Portugués</option>
+                <option value="Geografia">Geografía</option>
+                <option value="Arte">Arte</option>
+            </select><br><br>
+
+            <label for="nivelEscolaridade">Nivel de Escolaridade:</label>
+            <select id="nivelEscolaridade" name="nivelEscolaridade">
+                <option value="ensinoSuperiorCompleto">Ensino Superior Completo</option>
+                <option value="cursandoMaestrado">Cursando Maestrado</option>
+                <option value="maestradoCompleto">Maestrado Completo</option>
+                <option value="cursandoDoctorado">Cursando Doctorado</option>
+                <option value="doctoradoCompleto">Doctorado Completo</option>
+            </select><br><br>
+
+            <label for="sobreVoce">Descrição sobre si mesmo:</label><br>
+            <textarea id="sobreVoce" name="sobreVoce" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+
 
     </head>
 
     <footer>
 
-        <h2>Contacto</h2>
+        <h2>Contacto directo</h2>
 
         <p>Tienes un proyecto en mente? contactame:</p>
-        <p>Nombre:</p> <input type="text">
-        <p>Email:</p> <input type="text">
-        <p>Phone:</p> <input type="text">
-        <p>Asunto:</p> <input type="text">
-        <p>Mensaje:</p> <textarea></textarea>
-        <p>Desea recibi mi newsletter?</p>
-        <button>Enviar</button> <datatime>2024-06-01</datetime>
-
+        <form action="" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto"><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+            <p>Desea recibi mi newsletter?</p>
+            <button>Enviar</button> <datatime>2024-06-01</datetime>
+        '</form>
     </footer>
 
 </body>
