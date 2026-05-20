@@ -1,105 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
+  <title>Luna Pet Care | Pet shop para pets felizes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <head>
-        
-        <h1>Jose Angel  Castrillo Zamora </h1>
+  <header class="hero">
+    <div class="hero__decor">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="eyebrow">Pet shop & bem-estar</span>
+        <h1>Bem-vindo à Luna Pet Care</h1>
+        <p>Cuidados personalizados para cães e gatos com banho, tosa, consultoria nutricional e carinho profissional.</p>
+        <div class="hero__buttons">
+          <a href="#contato" class="button">Agende uma visita</a>
+          <a href="#servicos" class="button secondary">Conheça os serviços</a>
+        </div>
+      </div>
+      <div class="hero__card card">
+        <div class="hero__image">
+          <div class="hero__badge">+300 pets cuidados</div>
+          <div class="hero__pet"></div>
+        </div>
+        <div class="hero__highlights">
+          <div>
+            <strong>Atendimento carinhoso</strong>
+            <p>Equipe treinada para conforto e tranquilidade.</p>
+          </div>
+          <div>
+            <strong>Atendimento rápido</strong>
+            <p>Agendamentos ágeis e cuidado responsável.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <img src="" alt="">
-        
-        <nav>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </nav>
+  <main>
+    <section id="sobre" class="section about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <span class="eyebrow">Sobre nós</span>
+          <h2>Uma experiência acolhedora para pets e tutores</h2>
+          <p>Na Luna Pet Care, misturamos carinho com profissionalismo para garantir que cada banho, tosa e atendimento seja seguro, confortável e memorável.</p>
+          <ul>
+            <li>Produtos naturais e fórmulas suaves.</li>
+            <li>Espaço aconchegante e higienizado.</li>
+            <li>Equipe preparada para cães e gatos de todas as idades.</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <article class="stat-card">
+            <span>5+</span>
+            <p>Anos de experiência</p>
+          </article>
+          <article class="stat-card">
+            <span>300+</span>
+            <p>Pets atendidos</p>
+          </article>
+          <article class="stat-card">
+            <span>98%</span>
+            <p>Clientes satisfeitos</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <h2>Sobre Mí</h2>
-        <p>Soy un desarrollador web apasionado por crear experiencias digitales excepcionales.</p>
+    <section id="servicos" class="section services">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Serviços</span>
+          <h2>Cuidados completos para seu melhor amigo</h2>
+        </div>
+        <div class="services__grid">
+          <article class="service-card">
+            <div class="service-card__icon">🛁</div>
+            <h3>Banho e Tosa</h3>
+            <p>Higiene completa com shampoo suave e acabamento personalizado.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🍎</div>
+            <h3>Nutrição e Saúde</h3>
+            <p>Consultoria alimentar com recomendações saudáveis para cada porte e idade.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🏡</div>
+            <h3>Hotelzinho Pet</h3>
+            <p>Espaço acolhedor para hospedagem curta com supervisão dedicada.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon">🛍️</div>
+            <h3>Produtos selecionados</h3>
+            <p>Brinquedos, petiscos e acessórios escolhidos para saúde e diversão.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <h2>Proyectos</h2>
-        <p>Aquí están algunos de mis proyectos más destacados:</p>
+    <section id="contato" class="section contact">
+      <div class="container contact__grid">
+        <div class="contact__info card">
+          <span class="eyebrow">Vamos conversar</span>
+          <h2>Agende um cuidado especial para seu pet</h2>
+          <p>Preencha o formulário e entraremos em contato para confirmar o melhor horário para visita ou atendimento.</p>
+          <ul>
+            <li><strong>Endereço:</strong> Rua das Flores, 240, Jardim Pet</li>
+            <li><strong>Telefone:</strong> (11) 90000-1234</li>
+            <li><strong>Horário:</strong> Seg-Sáb, 9h às 19h</li>
+          </ul>
+        </div>
+        <form id="contactForm" class="contact__form card" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Nome do tutor" required>
 
-        <h2>Habilidades</h2>
-        <p>Tengo experiencia en las siguientes tecnologías:</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            
-        </ul>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
 
-        <h2>Formulario</h2>
-        <form action="get" id="formularioDeContacto" name="formularioDeContacto">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name"><br><br>
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" placeholder="Ex: agendar banho e tosa" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos mais sobre seu pet" required></textarea>
 
-            <label for="edad">Idade:</label>
-            <input type="number" id="edad" name="edad"><br><br>
-
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto"><br><br>
-
-            <label for="turnoDisponiveis">Para qual materia você está interesado?</label>
-            <select id="turnoDisponiveis" name="turnoDisponiveis">
-                <option value="matematicas">Matemáticas</option>
-                <option value="ciencias">Ciencias</option>
-                <option value="historia">Historia</option>
-                <option value="Biologia">Biologia</option>
-                <option value="Portugues">Portugués</option>
-                <option value="Geografia">Geografía</option>
-                <option value="Arte">Arte</option>
-            </select><br><br>
-
-            <label for="nivelEscolaridade">Nivel de Escolaridade:</label>
-            <select id="nivelEscolaridade" name="nivelEscolaridade">
-                <option value="ensinoSuperiorCompleto">Ensino Superior Completo</option>
-                <option value="cursandoMaestrado">Cursando Maestrado</option>
-                <option value="maestradoCompleto">Maestrado Completo</option>
-                <option value="cursandoDoctorado">Cursando Doctorado</option>
-                <option value="doctoradoCompleto">Doctorado Completo</option>
-            </select><br><br>
-
-            <label for="sobreVoce">Descrição sobre si mesmo:</label><br>
-            <textarea id="sobreVoce" name="sobreVoce" rows="4" cols="50"></textarea><br><br>
-
-            <input type="submit" value="Enviar">
+          <button type="submit" class="button">Enviar mensagem</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
         </form>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© 2026 Luna Pet Care — Um lugar feito para pets e seus tutores.</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
 
-
-    </head>
-
-    <footer>
-
-        <h2>Contacto directo</h2>
-
-        <p>Tienes un proyecto en mente? contactame:</p>
-        <form action="" method="get">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto"><br><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
-            <p>Desea recibi mi newsletter?</p>
-            <button>Enviar</button> <datatime>2024-06-01</datetime>
-        '</form>
-    </footer>
-
+  <script src="app.js"></script>
 </body>
 </html>
